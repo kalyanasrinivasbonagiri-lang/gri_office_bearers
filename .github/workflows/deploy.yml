@@ -29,10 +29,8 @@ jobs:
         run: npm ci
       - name: Build site
         run: npm run build
-      - name: Prepare direct profile URLs for GitHub Pages
-        run: |
-          cp dist/index.html dist/404.html
-          node --input-type=module -e "import fs from 'node:fs'; import path from 'node:path'; const html=fs.readFileSync('dist/index.html','utf8'); const people=fs.readdirSync('src/people').filter(file=>file.endsWith('.js')).map(file=>path.basename(file,'.js')); for (const slug of people) { for (const route of [slug,'office-bearers/'+slug]) { const dir=path.join('dist',route); fs.mkdirSync(dir,{recursive:true}); fs.writeFileSync(path.join(dir,'index.html'),html); } }"
+      - name: Add custom not found page
+        run: cp dist/index.html dist/404.html
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
