@@ -15,16 +15,16 @@ Each office bearer has a file in `src/people/`. Edit that file to change the per
 
 ## GitHub Pages deployment
 
-This project is prepared for a repository named `gri`, served at `https://<github-username>.github.io/gri/`.
+This project is prepared for the repository named `gri_office_bearers`, served at `https://<github-username>.github.io/gri_office_bearers/`.
 
-1. Create a GitHub repository named `gri` and push this project to its `main` branch.
+1. Create a GitHub repository named `gri_office_bearers` and push this project to its `main` branch.
 2. In the repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**.
 3. Pushes to `main` will build the site and deploy the `dist` folder using the included workflow.
 
 Profile URLs include the repository prefix, for example:
 
-`https://<github-username>.github.io/gri/office-bearers/tech-lead/`
+`https://<github-username>.github.io/gri_office_bearers/tech-lead/`
 
-GitHub Pages does not provide SPA rewrite rules for nested URLs. The included workflow publishes fallback files for client-side routes so QR profile URLs work when opened directly. Once deployed, verify the final URL before printing QR codes.
+GitHub Pages does not provide SPA rewrite rules for nested URLs. The included workflow publishes static entry points for each profile so QR profile URLs work when opened directly. Both `/tech-lead/` and `/office-bearers/tech-lead/` are supported. Once deployed, verify the final URL before printing QR codes.
 
 For a repository with a different name, update `base` in `vite.config.js` to `/<repository-name>/` before deployment. For a custom domain or `username.github.io` repository, set the base path to `/`.

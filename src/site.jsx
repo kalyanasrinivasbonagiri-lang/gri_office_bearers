@@ -27,7 +27,7 @@ const basePath = import.meta.env.BASE_URL;
 const sitePath = path => `${basePath}${path.replace(/^\/+/, '')}`;
 const griLinkedIn = 'https://www.linkedin.com/company/centre-for-grassroots-research-innovation-gri/';
 const griInstagram = 'https://www.instagram.com/jainresearch_gri?stkn=bjAxZHY1Z2oyMXdx';
-function currentPage(){ let path=decodeURI(location.pathname);if(path.startsWith(basePath))path=`/${path.slice(basePath.length)}`;path=path.replace(/^\/+|\/+$/g,'');const parts=path.split('/').filter(Boolean);if(parts.length===2&&parts[0]==='office-bearers'){const person=people.find(p=>p.slug===parts[1]);return person?{view:'profile',person}:{view:'not-found'}}return {view:'not-found'}; }
+function currentPage(){ let path=decodeURI(location.pathname);if(path.startsWith(basePath))path=`/${path.slice(basePath.length)}`;path=path.replace(/^\/+|\/+$/g,'');const parts=path.split('/').filter(Boolean);const slug=parts.length===1?parts[0]:parts.length===2&&parts[0]==='office-bearers'?parts[1]:null;const person=people.find(p=>p.slug===slug);return person?{view:'profile',person}:{view:'not-found'}; }
 function App(){ const [page,setPage]=useState(currentPage);
   React.useEffect(()=>{const cb=()=>setPage(currentPage());window.addEventListener('popstate',cb);return()=>window.removeEventListener('popstate',cb)},[]);
   if(page.view!=='profile')return <main className="not-found-page"><section className="not-found"><span className="eyebrow"><i/>404 - Page not found</span><h1>This page is not available</h1><p>Only individual GRI office bearer profile links are available on this site.</p></section></main>;

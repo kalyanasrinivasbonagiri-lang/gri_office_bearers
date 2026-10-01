@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 
-// GitHub Pages serves project sites below /<repository-name>/.
-// Override with VITE_BASE_PATH=/ for a custom domain or user site.
-const base = process.env.VITE_BASE_PATH || '/gri/';
+// This repository is named gri_office_bearers on GitHub Pages.
+// For a custom domain or user site, set VITE_BASE_PATH=/.
+const base = process.env.VITE_BASE_PATH || '/gri_office_bearers/';
 
 export default defineConfig({
   base,
