@@ -1,12 +1,12 @@
 export default {
   role: 'Outreach Co-Lead',
   slug: 'outreach-co-lead',
-  name: 'Name to be added',
-  branch: 'Branch to be added',
-  year: 'Year to be added',
-  phone: '',
+  name: 'Harshitha B.R  ',
+  branch: 'B.Tech AIML',
+  year: '2nd year ',
+  phone: '9964856767',
   photo: '',
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/harshitha-b-r-2b8485389?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   github: '',
-  instagram: '',
+  instagram: 'https://www.instagram.com/harshitha_br15?stkn=OGVjNG9qMnM0ODY1&utm_source=qr',
 };

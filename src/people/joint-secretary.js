@@ -3,7 +3,7 @@ export default {
   slug: 'joint-secretary',
   name: 'g.pavansanthosh',
   branch: 'Branch to be added',
-  year: 'Year to be added',
+  year: '3rd year ',
   phone: '8500519977',
   photo: '/photos/joint_secretary.jpeg',
   linkedin: 'https://www.linkedin.com/in/g-pavan-santhosh/?isSelfProfile=true',

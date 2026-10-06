@@ -1,12 +1,12 @@
 export default {
   role: 'Design Lead',
   slug: 'design-lead',
-  name: 'Name to be added',
-  branch: 'Branch to be added',
-  year: 'Year to be added',
-  phone: '',
+  name: 'Ruchitha Gangatkaar A M ',
+  branch: 'CSE AIDE B ',
+  year: '2nd year ',
+  phone: '9148947196',
   photo: '',
-  linkedin: '',
-  github: '',
+  linkedin: 'www.linkedin.com/in/ruchitha-gangatkaar-a-m-35499138a',
+  github: 'https://github.com/ruchithaam18-ux',
   instagram: '',
 };
