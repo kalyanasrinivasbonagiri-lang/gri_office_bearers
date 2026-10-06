@@ -5,7 +5,7 @@ export default {
   branch: 'Ece',
   year: '2nd year',
   phone: '8248086391',
-  photo: '',
+  photo: '/photos/media-lead.jpg',
   linkedin: '',
   github: '',
   instagram: '',

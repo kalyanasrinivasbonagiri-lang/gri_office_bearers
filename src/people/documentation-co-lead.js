@@ -5,7 +5,7 @@ export default {
   branch: 'Cse ',
   year: '2nd year',
   phone: '6383128037',
-  photo: '',
+  photo: '/photos/documentation-co-lead.png',
   linkedin: 'https://www.linkedin.com/in/hemanthan',
   github: 'https://github.com/hemanathan-14',
   instagram: 'https://www.instagram.com/hemz_14_?stkn=cWJhMjB4emtmYTF3',

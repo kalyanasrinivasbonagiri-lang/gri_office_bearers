@@ -5,7 +5,7 @@ export default {
   branch: 'CSE GEN AI IBM B ',
   year: '2nd year ',
   phone: '99012 87041 ',
-  photo: '',
+  photo: '/photos/operations-lead.png',
   linkedin: 'https://www.linkedin.com/in/sai-sohan-s-696b81397?utm_source=share_via&utm_content=profile&utm_medium=member_android',
   github: 'https://github.com/saisohanS4',
   instagram: 'https://www.instagram.com/_saisohan_?stkn=MW5ucDgyYXdrY3hsdg==',
